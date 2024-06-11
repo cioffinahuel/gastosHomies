@@ -7,7 +7,7 @@ import { ApiTags } from '@nestjs/swagger';
 export class UsersController {
   constructor(private usersService: UsersService) {}
 
-  @ApiTags('users')
+  
   @Get('/users')
   getUsers() {
     return this.usersService.getUsers();
