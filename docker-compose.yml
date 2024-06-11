@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: xrozz
+      POSTGRES_PASSWORD: xrozzPSW
+      POSTGRES_DB: homiesdb
+    ports:
+      - 5499:5432
